@@ -9,7 +9,23 @@
 body{
     font-family: "poppins", sans-serif;
 }
-
 html{
     scroll-behavior: smooth;
+}
+p{
+    color: rgb(85,85,85);
+}
+
+
+/* TRASITION */
+.btn{
+transition: all 300ms ease;
+}
+
+
+/* DESKTOP */
+nav,.nav-link{
+    justify-content: space-around;
+    display: flex;
+    height: 17vh;
 }
