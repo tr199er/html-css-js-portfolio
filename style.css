@@ -104,7 +104,7 @@ a:hover {
     transition: all 0.3 ease-in-out;
 }
 
-/* .menu-links a {
+.menu-links a {
     display: block;
     padding: 10px;
     text-align: center;
@@ -112,37 +112,39 @@ a:hover {
     color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
-} */
+}
 
-/* .menu-links li {
+.menu-links li {
     list-style: none;
-} */
+}
 
-/* .menu-links.open {
+.menu-links.open {
     max-height: 300px;
-} */
+}
 
-/* .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px 5px);
-} */
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg); 
+    translate: (10px, 5px);
+}
 
-/* .hamburger-icon.open span:nth-child(2) {
+.hamburger-icon.open span:nth-child(2) {
     opacity: 0;
-} */
+}
 
-/* .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px -5px);
-} */
+.hamburger-icon.open span:last-child {
+    transform: rotate(135deg); 
+    translate: (10px, -5);
+}
 
-/* .hamburger-icon span:first-child {
+.hamburger-icon span:first-child {
     transform: none;
-} */
+}
 
-/* .hamburger-icon span:nth-child(2) {
+.hamburger-icon span:nth-child(2) {
     opacity: 1;
-} */
+}
 
-/* .hamburger-icon span:last-child {
+.hamburger-icon span:last-child {
     transform: none;
-}  */
+} 
 
