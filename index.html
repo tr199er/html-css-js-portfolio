@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/mediaqueries.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="/mediaqueries.css">
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <nav id="desktop-nav">
-    <div class="logo">Akanni Malik</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#Project">Project</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HAMBURGER -->
-  <nav id="hamburger-nav">
-    <div class="logo">Akanni Malik</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <ul>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#Project" onclick="toggleMenu()">Project</a></li>
-          <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="desktop-nav">
+      <div class="logo">Akanni Malik</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- SECTIONS -->
-  <section id="profile">
-    <div class="section_pic-container">
-<img src="./assets/profile-pic.png" alt="akanni malik profile picture">
-    </div>
-  </section>
+    <!-- HAMBURGER -->
+    <nav id="hamburger-nav">
+      <div class="logo">Akanni Malik</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#Project" onclick="toggleMenu()">Project</a></li>
+            <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <script src="script.js"></script>
-</body>
+    <!-- SECTIONS -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="img_radius" src="./assets/mine.jpg" alt="akanni malik profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h2 class="title">Akanni Malik</h2>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#Contact'">
+            Contact Info
+          </button>
+        </div>
+        <div class="socials-container"></div>
+        <img
+          src="./assets/linkedin.png"
+          onclick="location.href='www.linkedin.com'"
+          alt="my linkedin profile"/>
+        <img
+          src="./assets/github.png"
+          onclick="location.href='www.github.com'"
+          alt="my github profile"/>
+      </div>
+    </section>
 
+    <script src="script.js"></script>
+  </body>
 </html>
