@@ -335,12 +335,6 @@ section {
   gap: 2.5rem;
   justify-content: space-around;
 }
-/* .about-containers {
-  display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-} */
 
 article {
   display: flex;
