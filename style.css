@@ -347,3 +347,6 @@ article .icon {
 }
 
 /* PROJECT SECTION */
+#project {
+  position: relative;
+}
